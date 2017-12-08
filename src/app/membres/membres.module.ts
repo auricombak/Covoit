@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MembresComponent } from './membres.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [MembresComponent]
+  declarations: [ AuthComponent],
+  exports : [ AuthComponent ]
 })
 export class MembresModule { }
